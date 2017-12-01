@@ -7,12 +7,12 @@ var app = express();
 app.disable('x-powered-by');
 
 // View engine setup
-//app.set('views', path.join(__dirname, '../views'));
-//app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // Public files
-app.use('/public', express.static('public'));
-app.use('/bin', express.static('bin'));
+app.use('/public', express.static( path.join(__dirname, '../../public') ));
+app.use('/bin', express.static( path.join(__dirname, '../../bin') ));
 
 // Routes
 app.use('/', routes);

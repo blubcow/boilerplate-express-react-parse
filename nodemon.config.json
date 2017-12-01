@@ -1,6 +1,7 @@
 {
 	"verbose": true,
+	"ext": "*.*",
 	"watch": [
-		"src/express/*"
+		"src/*"
 	]
 }
