@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-var Parse = require('parse');
-
 import Navigation from './components/navigation';
+
+import Parse from '../parse-store/parse-browser';
 
 /*
 Parse.initialize(appId);

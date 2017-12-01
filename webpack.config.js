@@ -1,4 +1,5 @@
 var path = require('path');
+var Dotenv = require('dotenv-webpack');
 
 var reactConfig = {
 	target: 'web',
@@ -13,6 +14,11 @@ var reactConfig = {
 	    	{ test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
 		]
 	},
+	plugins: [
+		new Dotenv({
+			'path': path.resolve(__dirname, '.env')
+		})
+	],
 	watch: true
 };
 
