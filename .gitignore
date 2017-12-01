@@ -4,3 +4,5 @@ node_modules/
 bin/
 dist/
 .env
+package-lock.json
+logs/
